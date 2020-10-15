@@ -1,0 +1,51 @@
+{
+  "name": "YJAMRConverter",
+  "version": "0.0.1",
+  "summary": "AMR<->WAV 格式转换器",
+  "description": "基于opencore-arm的 AMR<->WAV 格式转换器",
+  "homepage": "https://github.com/yangjing901/YJAMRConverte.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yangjing901": "yangjing901@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/yangjing901/YJAMRConverte.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "static_framework": true,
+  "subspecs": [
+    {
+      "name": "lib",
+      "source_files": "YJAMRConverter/OpenCore/opencore-amrnb/*",
+      "vendored_libraries": "YJAMRConverter/OpenCore/lib/*.a"
+    },
+    {
+      "name": "wapper",
+      "source_files": "YJAMRConverter/OpenCore/amrwapper/*",
+      "compiler_flags": "-fno-objc-arc",
+      "dependencies": {
+        "YJAMRConverter/lib": [
+
+        ]
+      }
+    },
+    {
+      "name": "core",
+      "source_files": "YJAMRConverter/Classes/**/*",
+      "dependencies": {
+        "YJAMRConverter/lib": [
+
+        ],
+        "YJAMRConverter/wapper": [
+
+        ]
+      }
+    }
+  ]
+}

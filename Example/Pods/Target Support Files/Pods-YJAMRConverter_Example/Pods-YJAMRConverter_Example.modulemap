@@ -1,0 +1,6 @@
+framework module Pods_YJAMRConverter_Example {
+  umbrella header "Pods-YJAMRConverter_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

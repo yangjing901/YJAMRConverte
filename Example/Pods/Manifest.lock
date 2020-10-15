@@ -1,0 +1,32 @@
+PODS:
+  - Masonry (1.1.0)
+  - YJAMRConverter (0.0.1):
+    - YJAMRConverter/core (= 0.0.1)
+    - YJAMRConverter/lib (= 0.0.1)
+    - YJAMRConverter/wapper (= 0.0.1)
+  - YJAMRConverter/core (0.0.1):
+    - YJAMRConverter/lib
+    - YJAMRConverter/wapper
+  - YJAMRConverter/lib (0.0.1)
+  - YJAMRConverter/wapper (0.0.1):
+    - YJAMRConverter/lib
+
+DEPENDENCIES:
+  - Masonry
+  - YJAMRConverter (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+
+EXTERNAL SOURCES:
+  YJAMRConverter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YJAMRConverter: 73de305a0f1e6bbab4b69728058aff4f21e48a1e
+
+PODFILE CHECKSUM: 6bc344b01395749778bd4f1fd1382b1d69d094b3
+
+COCOAPODS: 1.8.4
